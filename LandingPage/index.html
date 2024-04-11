@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Title of the page -->
+    <title>Landing Page</title>
+    <!-- Link to external CSS file -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Link to Font Awesome CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <!-- Header Section -->
+    <section class="header_section">
+        <!-- Navigation -->
+        <nav>
+            <!-- Logo -->
+            <div class="logo">
+                <h1>LIVEYOGA</h1>
+            </div>
+            <!-- Menu items -->
+            <ul id="sidemenu">
+                <li class="link"><a href="#home">Home</a></li>
+                <li class="link"><a href="#classes">Classes</a></li>
+                <li class="link"><a href="#membership">Membership</a></li>
+                <li class="link"><a href="#contact">Contact</a></li>
+                <li class="link"><a href="#service">Service</a></li>
+                <li class="link"><a href="#">Login</a></li>
+                <!-- Close icon for side menu -->
+                <i class="fa-solid fa-xmark" onclick="closeMenu()"></i>
+            </ul>
+            <!-- Menu icon for opening side menu -->
+            <i class="fa-solid fa-bars" onclick="openMenu()"></i>
+        </nav>
+
+        <!-- Header content -->
+        <header id="home">
+            <div class="section_container header_container">
+                <h1>Yoga is the journey <span class="highlighted_text">Of<br />The Self,<br />To The
+                        Self,<br />Through
+                        The Self</span></h1>
+                <h3>- do yoga today for a better tomorrow</h3>
+                <!-- Form for capturing email -->
+                <form class="primary_cta">
+                    <input type="email" placeholder="Enter Your Email Id..">
+                    <button type="submit" class="header_cta btn">Get Started</button>
+                </form>
+            </div>
+        </header>
+    </section>
+
+    <!-- Why choose yoga Section -->
+    <section class="section_container why_yoga">
+        <!-- Section content -->
+        <div class="why_content">
+            <h2 class="section_header">Why You Should Go To Yoga?</h2>
+            <p class="section_subheader">Yoga can make you stronger and more flexible , yoga is good for reducing
+                stress</p>
+            <!-- Benefits of yoga -->
+            <div class="benefits_container">
+                <div class="benefit_card">
+                    <img src="image/benefitimage1.png" alt="Blood Circulation image" />
+                    <h4>Blood Circulation</h4>
+                    <p>
+                        Yoga can reduce anxiety , stress and improve the blood circulation in fact , the benefits of
+                        yoga
+                        can.
+                    </p>
+                </div>
+                <div class="benefit_card">
+                    <img src="image/benefitimage2.png" alt="Body & Mind Balance image" />
+                    <h4>Body & Mind Balance</h4>
+                    <p>
+                        Through purposeful poses and mindful breathing, yoga cultivates a
+                        flexible body while nurturing inner calm.
+                    </p>
+                </div>
+                <div class="benefit_card">
+                    <img src="image/benefitimage3.png" alt="Respiratory Fitness image" />
+                    <h4>Respiratory Fitness</h4>
+                    <p>
+                        Yoga can impress overall respiratory fitness and well-being, yoga can also help heal the
+                        lungs.
+                    </p>
+                </div>
+            </div>
+    </section>
+
+    <!-- Classes Section -->
+    <section class="section_container class_section" id="classes">
+        <p class="section_subheader">Our Classes</p>
+        <h2 class="section_header">Join A Class Today</h2>
+        <div class="class_image_section">
+            <!-- Individual class image with overlay -->
+            <div class="image_container">
+                <img src="image/beginnerimage.jpg" alt="women practicing beginner yoga">
+                <div class="image_overlay">
+                    <h4 class="image_text">Beginner Level</h4>
+                </div>
+            </div>
+            <div class="image_container">
+                <img src="image/intermediateimage.jpg" alt="women practicing intermediate yoga">
+                <div class="image_overlay">
+                    <h4 class="image_text">Intermediate Level</h4>
+                </div>
+            </div>
+            <div class="image_container">
+                <img src="image/advanceimage.jpg" alt="women practicing advance yoga">
+                <div class="image_overlay">
+                    <h4 class="image_text">Advance Level</h4>
+                </div>
+            </div>
+            <div class="image_container">
+                <img src="image/prenatalyoga.jpg" alt="women practicing beginner yoga">
+                <div class="image_overlay">
+                    <h4 class="image_text">Prenatal Yoga</h4>
+                </div>
+            </div>
+            <div class="image_container">
+                <img src="image/kidsyoga.jpg" width="250" alt="women practicing beginner yoga">
+                <div class="image_overlay">
+                    <h4 class="image_text">Yoga for Kids</h4>
+                </div>
+            </div>
+            <div class="image_container">
+                <img src="image/familyyoga.jpg" width="250" alt="women practicing beginner yoga">
+                <div class="image_overlay">
+                    <h4 class="image_text">Family Yoga</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Membership Section -->
+    <section class="section_container membership_section" id="membership">
+        <p class="section_subheader">PRICING TABLE</p>
+        <h2 class="section_header">Membership Cards</h2>
+        <div class="membership_cards_section">
+            <!-- Individual membership cards -->
+            <div class="membership_card">
+                <!-- Card details -->
+                <h4>REGULAR MEMBER</h4>
+                <h2><sup>$</sup>49</h2>
+                <h3>PER MONTH</h3>
+                <h4>ENJOY ALL THE FEATURES</h4>
+                <p>Onetime access to all club</p>
+                <p>Group trainer</p>
+                <p>Book a group class</p>
+                <p>Fitness orientation</p>
+                <button class="btn membership_btn">JOIN NOW</button>
+            </div>
+            <div class="membership_card">
+                <!-- Card details -->
+                <h4>V.I.P MEMBER</h4>
+                <h2><sup>$</sup>99</h2>
+                <h3>PER MONTH</h3>
+                <h4>ENJOY ALL THE FEATURES</h4>
+                <p>Access club facilities</p>
+                <p>15% off all massage treatments</p>
+                <p>Outdoor activities</p>
+                <p>Free T-shirts</p>
+                <button class="btn membership_btn">JOIN NOW</button>
+            </div>
+            <div class="membership_card">
+                <!-- Card details -->
+                <h4>PREMIUM MEMBER</h4>
+                <h2><sup>$</sup>169</h2>
+                <h3>PER MONTH</h3>
+                <h4>ENJOY ALL THE FEATURES</h4>
+                <p>Access to yoga area</p>
+                <p>Personal trainer</p>
+                <p>Special class</p>
+                <p>Free T-shirts and Swags</p>
+                <button class="btn membership_btn">JOIN NOW</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact section -->
+    <section class="section_container contact_section" id="contact">
+        <p class="section_subheader">CONTACT US</p>
+        <h2 class="section_header">CONTACT</h2>
+        <!-- Contact form and details -->
+        <div class="contact_container">
+            <!-- Form for contacting -->
+            <form>
+                <h1>Ready To Start Yoga Classes Now?</h1>
+                <div class="input_wrapper">
+                    <input type="text" placeholder="Your Name*">
+                    <input type="email" placeholder="Email*">
+                    <input type="text" placeholder="Phone Number*">
+                    <textarea name="message" placeholder="Message" cols="30" rows="3"></textarea>
+                    <button class="btn">Submit Now</button>
+                </div>
+            </form>
+            <!-- Contact details -->
+            <div class="address">
+                <h1>Talk To Us</h1>
+                <div class="ContactDetailsWrapper">
+                    <div class="ContactDetail">
+                        <img class="contact_image" src="image/email.png" alt="emailicon">
+                        <div class="text">
+                            <h4>EMAIL</h4>
+                            <p>liveyoga@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="ContactDetail">
+                        <img class="contact_image" src="image/phone.png" alt="phoneicon">
+                        <div class="text">
+                            <h4>PHONE</h4>
+                            <p>1987654322</p>
+                        </div>
+                    </div>
+                    <div class="ContactDetail">
+                        <img class="contact_image" src="image/location.png" alt="locationicon">
+                        <div class="text">
+                            <h4>LOCATION</h4>
+                            <p>2727 Ocean Road, <br />
+                                Malibu, CA, 90264</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="followUsWrapper">
+                    <h3>Follow Us</h3>
+                    <ul class="sociallink">
+                        <li><a href="#"><i class="fa-brands fa-twitter" style="color: #ee5da6;"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-facebook-f" style="color: #ee5da6;"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-instagram" style="color: #ee5da6;"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Service section -->
+    <section class="section_container service_section" id="service">
+        <p class="section_subheader">SERVICE</p>
+        <h2 class="section_header">Our Awesome <span class="highlighted_text">packages</span> that we offer</h2>
+        <!-- Our service offerings -->
+        <div class="our_service">
+            <div class="service">
+                <img src="image/online class.png" alt="online yoga class png">
+                <p>Online Classes</p>
+                <button class="service_btn">Learn more</button>
+            </div>
+            <div class="service">
+                <img src="image/personanl trainer.png" alt="personanl trainer for yoga png">
+                <p>Personal Trainer</p>
+                <button class="service_btn">Learn more</button>
+            </div>
+            <div class="service">
+                <img src="image/healthy diet.png" alt="healthy diet for yoga png">
+                <p>Healthy Diet</p>
+                <button class="service_btn">Learn more</button>
+            </div>
+            <div class="service">
+                <img src="image/unlimited video.png" alt="unlimited video png">
+                <p>Unlimited Videos</p>
+                <div class="btn_service">
+                    <button class="service_btn">Learn more</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer section -->
+    <footer class="footer">
+        <div class="section_container footer_section">
+            <p>Copyright © 2024 All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript code for handling side menu -->
+    <script>
+        // Get the side menu element
+        var sidemenu = document.getElementById("sidemenu");
+
+        // Function to open the side menu
+        function openMenu() {
+            sidemenu.style.right = "0";
+        }
+
+        // Function to close the side menu
+        function closeMenu() {
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+</body>
+
+</html>
